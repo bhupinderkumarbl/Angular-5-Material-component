@@ -1,0 +1,36 @@
+<mat-toolbar color="primary" style="margin-left: -15px">
+    <mat-toolbar-row>
+        <span>Angular 5</span>
+        <span class="example-spacer"></span>
+        <button mat-button>About</button>
+        <button mat-button>Service</button>
+        <button mat-button>Contact</button>
+    </mat-toolbar-row>
+</mat-toolbar>
+<div class="example-container">
+    <mat-form-field>
+        <input matInput placeholder="Input">
+    </mat-form-field>
+    <mat-form-field>
+        <textarea matInput placeholder="Textarea"></textarea>
+    </mat-form-field>
+    <form class="example-form">
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="Favorite food" value="Sushi">
+        </mat-form-field>
+
+        <button mat-button (click)="openSnackBar()" aria-label="Show an example snack-bar">
+            Pizza party
+        </button>
+        <mat-form-field>
+            <input type="text" matInput [formControl]="myControl" [matAutocomplete]="auto">
+        </mat-form-field>
+
+        <mat-autocomplete #auto="matAutocomplete">
+            <mat-option *ngFor="let option of options" [value]="option">
+                {{ option }}
+            </mat-option>
+        </mat-autocomplete>
+    </form>
+</div>
+

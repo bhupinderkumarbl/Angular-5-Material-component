@@ -1,0 +1,40 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  overflow: hidden;
+  font-weight: 300;
+  :host /deep/ label {
+    font-weight: 400 !important;
+  }
+}
+
+nav {
+  ul {
+    padding: 0;
+    margin: 0;
+    background: #ededed;
+    padding: 10px;
+    min-height: 100vh;
+    border-right:1px solid #ccc ;
+
+    li {
+      list-style: none;
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      border-color: rgba(0, 0, 0, .06);
+      color: rgba(0, 0, 0, .54);
+      line-height: 30px;
+      font-size: 24px;
+      font-family: 'Open Sans', sans-serif;
+      button {
+        width: 100%;
+        text-align: left;
+        padding: 10px;
+        font-size: 18px;
+      }
+      .active {
+        background: #00abdf;
+        color: #fff;
+      }
+    }
+  }
+}
