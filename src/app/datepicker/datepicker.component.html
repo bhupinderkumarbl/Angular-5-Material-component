@@ -8,37 +8,54 @@
     </mat-toolbar-row>
 </mat-toolbar>
 <div class="example-container">
-    <mat-form-field>
-        <input matInput placeholder="Input">
-    </mat-form-field>
-    <mat-form-field>
-        <textarea matInput placeholder="Textarea"></textarea>
-    </mat-form-field>
-    <form class="example-form">
-        <mat-form-field class="example-full-width">
-            <input matInput placeholder="Favorite food" value="Sushi">
-        </mat-form-field>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-6">
+                <h4>Prefilled </h4>
+                <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Favorite food" value="Sushi">
+                </mat-form-field>
+            </div>
+            <div class="col-md-6">
+                <h4>Input </h4>
+                <mat-form-field>
+                    <input matInput placeholder="Input">
+                </mat-form-field>
+
+            </div>
+            <h4>Textarea</h4>
+            <mat-form-field>
+                <textarea matInput placeholder="Textarea"></textarea>
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-6">
+                <h4>Select </h4>
+                <mat-form-field>
+                    <input type="text" matInput [formControl]="myControl" [matAutocomplete]="auto">
+                </mat-form-field>
+                <mat-autocomplete #auto="matAutocomplete">
+                    <mat-option *ngFor="let option of options" [value]="option">
+                        {{ option }}
+                    </mat-option>
+                </mat-autocomplete>
+
+            </div>
+            <div class="col-md-6">
+                <h4>Canelder</h4>
+                <mat-form-field class="example-full-width">
+                    <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker touchUi="true" #picker></mat-datepicker>
+                </mat-form-field>
 
 
-        <mat-form-field>
-            <input type="text" matInput [formControl]="myControl" [matAutocomplete]="auto">
-        </mat-form-field>
-<div class="col-md-12">
-    <br />
-    <h4>Auto Complete</h4>
-        <mat-autocomplete #auto="matAutocomplete">
-            <mat-option *ngFor="let option of options" [value]="option">
-                {{ option }}
-            </mat-option>
-        </mat-autocomplete>
-</div>
+            </div>
 
-        <mat-form-field>
-            <input matInput [matDatepicker]="picker" placeholder="Choose a date">
-            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-            <mat-datepicker #picker></mat-datepicker>
-        </mat-form-field>
+        </div>
+    </div>
 
-    </form>
 </div>
 
