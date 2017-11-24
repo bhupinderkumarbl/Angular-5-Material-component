@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {MatTableModule} from '@angular/material/table';
 import {FormControl} from '@angular/forms';
+import {MatDatepickerModule} from '@angular/material/datepicker';
 
 @Component({
   selector: 'app-datepicker',
@@ -10,9 +11,9 @@ import {FormControl} from '@angular/forms';
 export class DatepickerComponent implements OnInit {
   myControl: FormControl = new FormControl();
   options = [
-    'One',
-    'Two',
-    'Three'
+    'January',
+    'Fabuary',
+    'March'
   ];
   constructor() { }
 

@@ -5,7 +5,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import  {
     MatButtonModule, MatRadioModule, MatCheckboxModule, MatSliderModule,
     MatSnackBarModule, MatInputModule, MatTableModule, MatStepperModule, MatFormFieldModule, MatSnackBar,
-    MatAutocompleteModule
+    MatAutocompleteModule, MatDatepickerModule, MatNativeDateModule
 } from '@angular/material';
 // import {MdButtonModule} from '@angular/button';
 import {CheckboxComponent} from './checkbox/checkbox.component';
@@ -44,6 +44,9 @@ const appRoutes: Routes = [
         ReactiveFormsModule,
         MatFormFieldModule,
         MatRadioModule,
+        MatDatepickerModule,
+        MatNativeDateModule,
+
 
 
         RouterModule.forRoot(

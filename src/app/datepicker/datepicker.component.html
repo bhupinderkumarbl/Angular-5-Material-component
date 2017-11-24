@@ -23,7 +23,7 @@
         <mat-form-field>
             <input type="text" matInput [formControl]="myControl" [matAutocomplete]="auto">
         </mat-form-field>
-<div class="col-md-12" flex>
+<div class="col-md-12">
     <br />
     <h4>Auto Complete</h4>
         <mat-autocomplete #auto="matAutocomplete">
@@ -32,6 +32,13 @@
             </mat-option>
         </mat-autocomplete>
 </div>
+
+        <mat-form-field>
+            <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+
     </form>
 </div>
 
