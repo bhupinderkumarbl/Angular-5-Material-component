@@ -22,9 +22,6 @@ export class StepperComponent implements OnInit {
       secondCtrl: ['', Validators.required]
     });
   }
-  constructor() { }
 
-  ngOnInit() {
-  }
 
 }
