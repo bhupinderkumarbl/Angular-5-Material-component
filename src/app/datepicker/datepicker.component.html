@@ -19,18 +19,19 @@
             <input matInput placeholder="Favorite food" value="Sushi">
         </mat-form-field>
 
-        <button mat-button (click)="openSnackBar()" aria-label="Show an example snack-bar">
-            Pizza party
-        </button>
+
         <mat-form-field>
             <input type="text" matInput [formControl]="myControl" [matAutocomplete]="auto">
         </mat-form-field>
-
+<div class="col-md-12" flex>
+    <br />
+    <h4>Auto Complete</h4>
         <mat-autocomplete #auto="matAutocomplete">
             <mat-option *ngFor="let option of options" [value]="option">
                 {{ option }}
             </mat-option>
         </mat-autocomplete>
+</div>
     </form>
 </div>
 
