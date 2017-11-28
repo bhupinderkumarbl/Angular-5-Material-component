@@ -27,6 +27,8 @@ import { AccordianComponent } from './accordian/accordian.component';
 import { StepperComponent } from './stepper/stepper.component';
 import { ProgressbarComponent } from './progressbar/progressbar.component';
 import { ProgressSpinnerComponent } from './progress-spinner/progress-spinner.component';
+import { LoginComponent } from './login/login.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const appRoutes: Routes = [
     {path: 'CheckboxComponent', component: CheckboxComponent},
@@ -42,6 +44,8 @@ const appRoutes: Routes = [
     {path: 'StepperComponent', component: StepperComponent},
     {path: 'ProgressbarComponent', component: ProgressbarComponent},
     {path: 'ProgressSpinnerComponent', component: ProgressbarComponent},
+    {path: 'LoginComponent', component: LoginComponent},
+    {path: 'DashboardComponent', component: DashboardComponent},
 
 
 ];
@@ -62,6 +66,8 @@ const appRoutes: Routes = [
         StepperComponent,
         ProgressbarComponent,
         ProgressSpinnerComponent,
+        LoginComponent,
+        DashboardComponent,
 
 
     ],
