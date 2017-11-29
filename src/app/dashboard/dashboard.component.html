@@ -1,3 +1,30 @@
-<p>
-  dashboard works!
-</p>
+<div class=" col-lg-10 col-lg-offset-1">
+    <h2>{{title}}</h2>
+
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>User Id</th>
+            <th>Name</th>
+            <th>Addrses</th>
+            <th>Email</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let user of users; let i = index">
+            <td>{{i+1}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.address}}</td>
+            <td>{{user.email}}</td>
+            <td>
+                <button mat-raised-button color="warn" (click)="deleteNewUser(user)">Delete</button>
+                <button mat-raised-button color="primary" (click)="edit(user)">Edit</button>
+            </td>
+
+        </tr>
+        </tbody>
+    </table>
+
+
+</div>
