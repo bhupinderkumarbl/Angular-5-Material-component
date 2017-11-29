@@ -30,6 +30,7 @@ import { ProgressSpinnerComponent } from './progress-spinner/progress-spinner.co
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SnackbarComponent } from './snackbar/snackbar.component';
+import { PopupComponent } from './popup/popup.component';
 
 const appRoutes: Routes = [
     {path: 'CheckboxComponent', component: CheckboxComponent},
@@ -48,6 +49,7 @@ const appRoutes: Routes = [
     {path: 'LoginComponent', component: LoginComponent},
     {path: 'DashboardComponent', component: DashboardComponent},
     {path: 'SnackbarComponent', component: SnackbarComponent},
+    {path: 'PopupComponent', component: PopupComponent},
 
 
 ];
@@ -71,6 +73,7 @@ const appRoutes: Routes = [
         LoginComponent,
         DashboardComponent,
         SnackbarComponent,
+        PopupComponent,
 
 
     ],
