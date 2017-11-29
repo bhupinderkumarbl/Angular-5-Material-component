@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import {FormBuilder, FormGroup, Validators, FormControl} from '@angular/forms';
 
 export class NewUserInfo {
   name: string;
+  address: string;
+  email: string;
 }
 @Component({
   selector: 'app-dashboard',
@@ -10,7 +11,6 @@ export class NewUserInfo {
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit() {
